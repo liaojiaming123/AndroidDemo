@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity5">
+
+<!--    <GridLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:columnCount="4"-->
+<!--        android:rowCount="4"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_column="0"-->
+<!--            android:layout_columnSpan="4"-->
+<!--            android:layout_gravity="fill_horizontal"-->
+<!--            android:background="#00ff00"-->
+<!--            android:gravity="center"-->
+<!--            android:text="layout_columnSpan控件占用列数 layout_gravity填充方向" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView6"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="0"-->
+<!--            android:layout_gravity="fill_horizontal"-->
+<!--            android:background="#673AB7"-->
+<!--            android:gravity="center"-->
+<!--            android:text="layout_row|column设置位置"-->
+<!--            tools:layout_columnSpan="2" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView7"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_row="2"-->
+<!--            android:layout_rowSpan="1"-->
+<!--            android:layout_column="0"-->
+<!--            android:layout_columnSpan="4"-->
+<!--            android:layout_gravity="fill_horizontal"-->
+<!--            android:background="#03A9F4"-->
+<!--            android:ellipsize="marquee"-->
+<!--            android:gravity="center"-->
+<!--            android:lines="2"-->
+<!--            android:marqueeRepeatLimit="marquee_forever"-->
+<!--            android:maxLines="2"-->
+<!--            android:text="layout_gravity设置fill让columnSpan|rowSpan生效" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="2"-->
+<!--            android:background="#E91E63"-->
+<!--            android:gravity="center"-->
+<!--            android:text="layout_row|column从0开始" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView17"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_row="3"-->
+<!--            android:layout_column="0"-->
+<!--            android:gravity="center"-->
+<!--            android:text="第5个页面|网格布局" />-->
+
+<!--    </GridLayout>-->
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFCCCC"
+            android:text="网格布局"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="回退" />
+
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="清空" />
+
+        <Button android:text="+" />
+
+        <Button android:text="1" />
+
+        <Button android:text="2" />
+
+        <Button android:text="3" />
+
+        <Button android:text="-" />
+
+        <Button android:text="4" />
+
+        <Button android:text="5" />
+
+        <Button android:text="6" />
+
+        <Button android:text="*" />
+
+        <Button android:text="7" />
+
+        <Button android:text="8" />
+
+        <Button android:text="9" />
+
+        <Button android:text="/" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="." />
+
+        <Button android:text="0" />
+
+        <Button android:text="=" />
+
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="layout_columnSpan控件占用列数 layout_gravity填充方向；layout_row|column设置位置0开始；layout_gravity设置fill让columnSpan|rowSpan生效"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GridLayout1" />
+
+    <AbsoluteLayout
+        android:id="@+id/ab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00cc66"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            android:gravity="center"
+            android:text="绝对布局：layout_x|y 控件起始位置" />
+    </AbsoluteLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:foreground="@mipmap/ic_launcher"
+        android:foregroundGravity="bottom|right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#FF6143"
+            android:gravity="bottom|center"
+            android:text="帧布局" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#7BFE00"
+            android:gravity="bottom|center"
+            android:text="后面的控件覆盖前面" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFF00"
+            android:text="foreground设置前景图片|foregroundGravity图片位置" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

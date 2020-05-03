@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity4">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:foreground="@mipmap/ic_launcher"
+        android:background="#eee"
+        android:foregroundGravity="bottom|right">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="帧布局"
+            android:gravity="bottom|center"
+            android:background="#FF6143" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="后面的控件覆盖前面"
+            android:gravity="bottom|center"
+            android:background="#7BFE00" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="foreground设置前景图片|foregroundGravity图片位置"
+            android:background="#FFFF00" />
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
