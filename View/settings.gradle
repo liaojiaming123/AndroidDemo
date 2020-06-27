@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name='常用UI控件'

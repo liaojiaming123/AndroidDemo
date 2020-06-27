@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Service Demo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_startmyservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:text="startService启动MyService"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_main" />
+
+    <Button
+        android:id="@+id/btn_stopmyservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:text="stopService停止MyService"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_startmyservice" />
+
+    <Button
+        android:id="@+id/btn_bindmyservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:text="bindService绑定MyService"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_stopmyservice" />
+
+    <Button
+        android:id="@+id/btn_unbindmyservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:text="unbindService解绑MyService"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bindmyservice" />
+    <Button
+        android:id="@+id/btn_startmyintentservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:text="startService启动MyIntentService"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_unbindmyservice" />
+    <Button
+        android:id="@+id/btn_bindmyintentservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:text="bindService绑定MyIntentService"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_startmyintentservice" />
+    <Button
+        android:id="@+id/btn_startmain2activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:text="Activity与Service通信"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bindmyintentservice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

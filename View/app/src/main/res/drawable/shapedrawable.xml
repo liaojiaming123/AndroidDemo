@@ -1,8 +1,0 @@
-<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#ffee66"/>
-    <stroke android:width="2dp" android:color="#ff0000"/>
-    <padding android:bottom="5dp"/>
-    <corners android:radius="10px"/>
-<!--    <gradient android:startColor="#00ffcc" android:endColor="#11cccc"/>-->
-</shape>
