@@ -24,8 +24,6 @@ class MyAdapter extends RecyclerView.Adapter {
         this.context = context;
         this.list = list;
     }
-
-
     public void setList(List<String> list) {
         this.list = list;
     }
@@ -46,14 +44,15 @@ class MyAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder holder, int position) {
         final ViewHolder viewHolder = (ViewHolder)holder;
-
+        final int num = position+1;
+        viewHolder.textView.setText(list.get(position));
         //直接在Adapter内部对控件做点击事件
         viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,"这是列表"+position,Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,"这是列表"+num,Toast.LENGTH_SHORT).show();
             }
         });
         viewHolder.textView.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +61,7 @@ class MyAdapter extends RecyclerView.Adapter {
                 Toast.makeText(context,viewHolder.textView.getText(),Toast.LENGTH_SHORT).show();
             }
         });
-        viewHolder.textView.setText(list.get(position));
+
     }
 
     @Override

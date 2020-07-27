@@ -16,14 +16,19 @@ import java.util.List;
 class MyAdapter extends RecyclerView.Adapter {
     private List<String> list;
     private Context context;
-    public MyAdapter(Context context,List<String> list){
+    private ItemClick itemClick;
+    public MyAdapter(Context context,List<String> list,ItemClick itemClick){
         this.context = context;
         this.list = list;
+        this.itemClick = itemClick;
+    }
+    public interface ItemClick{
+        void onItemClick(int i);
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
         private TextView textView;
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = (TextView)itemView.findViewById(R.id.tv_horizontal);
         }
@@ -35,9 +40,16 @@ class MyAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
         ViewHolder viewHolder = (ViewHolder)holder;
         viewHolder.textView.setText(list.get(position));
+        //通过接口设置点击事件
+        viewHolder.textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itemClick.onItemClick(position);
+            }
+        });
 
     }
 

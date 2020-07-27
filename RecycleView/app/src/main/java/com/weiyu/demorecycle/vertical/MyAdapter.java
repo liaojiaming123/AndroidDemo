@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -46,8 +47,21 @@ class MyAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        ViewHolder viewHolder = (ViewHolder)holder;
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
+        final ViewHolder viewHolder = (ViewHolder)holder;
+        //直接在Adapter内部对控件做点击事件
+        viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,"这是列表"+position,Toast.LENGTH_SHORT).show();
+            }
+        });
+        viewHolder.textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,viewHolder.textView.getText(),Toast.LENGTH_SHORT).show();
+            }
+        });
         viewHolder.textView.setText(list.get(position));
     }
 

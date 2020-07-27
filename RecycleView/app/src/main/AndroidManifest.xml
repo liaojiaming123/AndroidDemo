@@ -4,14 +4,19 @@
 
     <application
         android:allowBackup="true"
+        android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".click.InterfaceClickActivity"/>
-        <activity android:name=".click.ClicklActivity"/>
-        <activity android:name=".stagger.StaggerActivity"/>
+        <activity android:name=".drag.DragActivity"></activity>
+        <activity android:name=".decoration.DecorationActivity" />
+        <activity android:name=".loader.LoaderActivity" />
+        <activity android:name=".header.HeaderActivity" />
+        <activity android:name=".click.InterfaceClickActivity" />
+        <activity android:name=".click.ClicklActivity" />
+        <activity android:name=".stagger.StaggerActivity" />
         <activity android:name=".grid.GridActivity" />
         <activity android:name=".horizontal.HorizontalActivity" />
         <activity android:name=".vertical.VerticalActivity" />

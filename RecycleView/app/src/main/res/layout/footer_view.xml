@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_footer_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp"
+        android:background="@color/cardview_light_background"
+        android:text="footer view"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>
