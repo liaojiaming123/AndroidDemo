@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialog.DialogFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_dialog_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_alert_dialog_fragment"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/aqua"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog提醒弹框" />
+        <Button
+            android:id="@+id/btn_progress_dialog_fragment"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/aqua"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="ProgressBarDialog进度条弹框" />
+
+        <Button
+            android:id="@+id/btn_popup_window_fragment"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/aqua"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="PopupWindow悬浮框" />
+        <Button
+            android:id="@+id/btn_date_dialog_fragment"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/aqua"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="DatePickerDialog时间日期选择框" />
+
+    </LinearLayout>
+
+</FrameLayout>

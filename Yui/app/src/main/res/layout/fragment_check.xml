@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base.CheckFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/btn_base_fragment_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            android:text="CheckBox RadioButton Demo"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="单选按钮组: 选择你喜欢的水果？" />
+        <RadioGroup
+            android:id="@+id/radio_group_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="苹果"
+                android:textColor="@color/fuchsia"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西瓜"
+                android:textColor="@color/fuchsia"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="樱桃"
+                android:textColor="@color/fuchsia"
+                android:textSize="16sp" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="多选按钮: 选择你喜欢的水果？" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="苹果"
+                android:textColor="@color/mediumSpringGreen"
+                android:textSize="16sp"/>
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西瓜"
+                android:textColor="@color/mediumSpringGreen"
+                android:textSize="16sp"/>
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="樱桃"
+                android:textColor="@color/mediumSpringGreen"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="自定义单选按钮组: 选择你喜欢的水果？" />
+        <RadioGroup
+            android:id="@+id/radio_group_fruit_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:text="苹果"
+                style="@style/MyRadioButton"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/radio_button_selected"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:text="西瓜"
+                style="@style/MyRadioButton"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/radio_button_selected"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:text="樱桃"
+                android:textColor="@color/colorPrimary"
+                style="@style/MyRadioButton"
+                android:background="@drawable/radio_button_selected"
+                android:textSize="16sp" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="自定义多选按钮: 选择你喜欢的水果？" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkBox_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="苹果"
+                android:textColor="@color/colorPrimaryBack"
+                android:background="@drawable/radio_button_selected"
+                style="@style/MyRadioButton"
+                android:paddingHorizontal="20dp"
+                android:textSize="16sp"/>
+            <CheckBox
+                android:id="@+id/checkBox2_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西瓜"
+                android:textColor="@color/colorPrimaryBack"
+                android:background="@drawable/radio_button_selected"
+                style="@style/MyRadioButton"
+                android:paddingHorizontal="20dp"
+                android:textSize="16sp"/>
+            <CheckBox
+                android:id="@+id/checkBox3_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="樱桃"
+                android:textColor="@color/colorPrimaryBack"
+                android:background="@drawable/radio_button_selected"
+                style="@style/MyRadioButton"
+                android:paddingHorizontal="20dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

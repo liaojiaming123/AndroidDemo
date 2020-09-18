@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialog.ProgressDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/linear_layout_progress_bar_dialog_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/progress_dialog_round"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/mediumSpringGreen"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="ProgressBarDialog圆形进度条" />
+        <Button
+            android:id="@+id/progress_dialog_react"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mediumSpringGreen"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="ProgressBarDialog条形进度条" />
+
+        <Button
+            android:id="@+id/progress_dialog_loading"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mediumSpringGreen"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="ProgressBarDialog更新进度条" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

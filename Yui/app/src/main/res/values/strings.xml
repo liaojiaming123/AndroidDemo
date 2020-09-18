@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Yui</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="spinner_menu_data">
+        <item>Aqua</item>
+        <item>Red</item>
+        <item>mGreen</item>
+        <item>Fuchsia</item>
+        <item>Purple</item>
+    </array>
+    <array name="recycler_view_data">
+        <item>纵向</item>
+        <item>横向</item>
+        <item>网格</item>
+        <item>瀑布流</item>
+    </array>
+
+</resources>

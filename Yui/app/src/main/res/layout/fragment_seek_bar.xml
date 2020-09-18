@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base.SeekBarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/toggle_base_fragment_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="16dp"
+            android:text="SeekBar Demo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="默认拖动条" />
+        <SeekBar
+            android:id="@+id/seek_bar_simple"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="60"
+            android:secondaryProgress="80"
+            android:max="100"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="定制拖动条" />
+        <SeekBar
+            android:id="@+id/seek_bar_c_simple"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="60"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:secondaryProgress="80"
+            android:max="100"
+            android:progressDrawable="@drawable/seek_bar"
+            android:thumb="@drawable/seek_bar_thumb"/>
+    </LinearLayout>
+
+</FrameLayout>

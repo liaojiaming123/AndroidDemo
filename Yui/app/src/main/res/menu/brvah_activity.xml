@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/brvah_"
+        android:title="效果"
+        app:showAsAction="always">
+        <menu>
+            <item android:title="简单布局"
+                android:id="@+id/brvah_layout"/>
+            <item android:title="头部与尾部"
+                android:id="@+id/brvah_header"/>
+            <item android:id="@+id/brvah_refresh"
+                android:title="刷新与加载"/>
+        </menu>
+    </item>
+
+</menu>

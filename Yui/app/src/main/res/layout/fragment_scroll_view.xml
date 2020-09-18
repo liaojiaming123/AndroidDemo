@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base.ScrollViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toggle_base_fragment_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="16dp"
+        android:text="ScrollView Demo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:paddingHorizontal="8dp"
+        android:text="横向滚动条" />
+        <HorizontalScrollView
+            android:id="@+id/scroll_view_simple_h"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/aqua">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="当内容溢出容器产生滚动条 当内容溢出容器产生滚动条"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:layout_marginVertical="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="纵向滚动条" />
+        <ScrollView
+            android:id="@+id/scroll_view_simple_v"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mediumSpringGreen">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="当\n内\n容\n溢\n出\n容\n器\n产\n生\n滚\n动\n条 \n当\n内\n容\n溢\n出\n容\n器\n产\n生\n滚\n动\n条"
+                android:textColor="@color/crimson"
+                android:textSize="20sp" />
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

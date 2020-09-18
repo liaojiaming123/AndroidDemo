@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="hotPink">#FF69B4</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="mediumSpringGreen">#00FA9A</color>
+    <color name="crimson">#DC143C</color>
+    <color name="orange">#FFA500</color>
+    <color name="red">#FF0000</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="purple">#800080</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimaryBack">#008577</color>
+    <color name="colorPrimaryDarkBack">#00574B</color>
+    <color name="colorAccentBack">#D81B60</color>
+    <color name="background">#fefefe</color>
+    <color name="ed">#ed9121</color>
+    <color name="cornsilk">#fff8dc</color>
+    <color name="meigui">#bc8f8f</color>
+    <color name="lightPurple">#da70d6</color>
+    <color name="shanhu">#ff7f50</color>
+    <color name="fColor1">#19caad</color>
+    <color name="fColor2">#8cc7b5</color>
+    <color name="fColor3">#a0eee1</color>
+    <color name="fColor4">#bee7e9</color>
+    <color name="fColor5">#beedc7</color>
+    <color name="sColor1">#d6d5b7</color>
+    <color name="sColor2">#d1ba74</color>
+    <color name="sColor3">#e6ceac</color>
+    <color name="sColor4">#ecad9e</color>
+    <color name="sColor5">#f4606c</color>
+
+
+</resources>

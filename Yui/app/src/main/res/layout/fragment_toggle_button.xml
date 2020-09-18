@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base.ToggleButtonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/toggle_base_fragment_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="16dp"
+            android:text="Switch ToggleButton Demo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="默认开关按钮" />
+        <LinearLayout
+            android:paddingVertical="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:id="@+id/tgb_on"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="已开起"
+            android:textOff="已关闭"
+            android:checked="true" />
+        <ToggleButton
+            android:id="@+id/tgb_off"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="已开起"
+            android:textOff="已关闭"
+            android:checked="false" />
+        <ToggleButton
+            android:id="@+id/tgb_disable"
+            android:disabledAlpha="0.5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="禁用开关"
+            android:textOn="禁用开关"
+            android:textOff="禁用开关"
+            android:clickable="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingVertical="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/switch_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOn="开"
+                android:textOff="关"
+                android:showText="true"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"/>
+            <Switch
+                android:id="@+id/switch_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textOn="开"
+                android:textOff="关"
+                android:showText="true"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"/>
+            <Switch
+                android:id="@+id/switch_disable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textOn="开"
+                android:textOff="关"
+                android:text="禁用开关"
+                android:disabledAlpha="0.5"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="自定义开关按钮" />
+        <LinearLayout
+            android:paddingVertical="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ToggleButton
+                android:id="@+id/tgb_on_c"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="已开起"
+                android:textOff="已关闭"
+                android:checked="true"
+                android:background="@drawable/toggle_button_selected"/>
+            <ToggleButton
+                android:id="@+id/tgb_off_c"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="已开起"
+                android:textOff="已关闭"
+                android:checked="false"
+                android:background="@drawable/toggle_button_selected"/>
+            <ToggleButton
+                android:id="@+id/tgb_disable_c"
+                android:disabledAlpha="0.5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禁用开关"
+                android:textOn="禁用开关"
+                android:textOff="禁用开关"
+                android:clickable="false"
+                android:background="@drawable/toggle_button_selected"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingVertical="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/switch_on_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOn="开"
+                android:textOff="关"
+                android:track="@drawable/swtich_track"
+                android:thumb="@drawable/swtich_thumb"
+                android:showText="true"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"/>
+            <Switch
+                android:id="@+id/switch_off_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textOn="开"
+                android:textOff="关"
+                android:track="@drawable/swtich_track"
+                android:thumb="@drawable/swtich_thumb"
+                android:showText="true"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"/>
+
+            <Switch
+                android:id="@+id/switch_disable_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:clickable="false"
+                android:disabledAlpha="0.5"
+                android:paddingHorizontal="10dp"
+                android:textOff="关"
+                android:textOn="开"
+                android:thumb="@drawable/swtich_thumb"
+                android:track="@drawable/swtich_track" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

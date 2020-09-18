@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialog.AlertDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/linear_layout_alert_dialog_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/alert_dialog_simple"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/mediumSpringGreen"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog普通对话框" />
+        <Button
+            android:id="@+id/alert_dialog_list"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mediumSpringGreen"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog列表对话框" />
+
+        <Button
+            android:id="@+id/alert_dialog_single"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/mediumSpringGreen"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog单选对话框" />
+        <Button
+            android:id="@+id/alert_dialog_multi"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mediumSpringGreen"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog多选对话框" />
+
+    </LinearLayout>
+
+</FrameLayout>

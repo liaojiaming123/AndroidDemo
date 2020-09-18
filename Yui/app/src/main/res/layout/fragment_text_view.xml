@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base.TextViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_base_fragment_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            android:text="TextView Demo"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="TextView 普通样式:"/>
+        <TextView
+            android:id="@+id/tv_base_fragment_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:text="示例文本 example"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/mediumSpringGreen"
+            android:textSize="16dp"
+            android:textStyle="italic|bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="TextView 背景边框:"/>
+        <TextView
+            android:id="@+id/tv_base_fragment_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:text="示例文本 example"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/crimson"
+            android:textSize="16dp"
+            android:background="@drawable/fragment_text_view_background"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="TextView 背景渐变:"/>
+        <TextView
+            android:id="@+id/tv_base_fragment_background_gradient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:text="示例文本 example"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDarkBack"
+            android:textSize="16dp"
+            android:background="@drawable/fragment_text_view_background_gradient"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="TextView 字体渐变:" />
+        <TextView
+            android:id="@+id/tv_base_fragment_text_gradient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:text="示例文本 example"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="TextView 多颜色渐变:" />
+        <TextView
+            android:id="@+id/tv_base_fragment_text_gradient_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:text="示例文本 example"
+            android:textColor="@color/colorPrimaryDarkBack"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="TextView 跑马灯:" />
+
+        <TextView
+            android:id="@+id/tv_base_fragment_marquee"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/fragment_text_view_background"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingHorizontal="16dp"
+            android:text="当那繁华落尽，剩下的是满地忧伤。"
+            android:textColor="@color/crimson"
+            android:textSize="16dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingHorizontal="8dp"
+            android:text="TextView 文本环绕图片:" />
+        <TextView
+            android:id="@+id/tv_base_fragment_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:text="示例文本"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableRight="@mipmap/ic_launcher"/>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            android:paddingHorizontal="8dp"-->
+<!--            android:text="TextView 上下滚动:" />-->
+<!--        <ViewAnimator-->
+<!--            android:id="@+id/view_animator_base_fragment"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:text="当那繁华落尽，剩下的"-->
+<!--                android:background="@drawable/fragment_text_view_background"-->
+<!--                android:textColor="@color/fuchsia"-->
+<!--                android:textSize="16dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:background="@drawable/fragment_text_view_background"-->
+<!--                android:text="是满地忧伤。"-->
+<!--                android:textColor="@color/fuchsia"-->
+<!--                android:textSize="16dp"/>-->
+<!--        </ViewAnimator>-->
+    </LinearLayout>
+
+</FrameLayout>
