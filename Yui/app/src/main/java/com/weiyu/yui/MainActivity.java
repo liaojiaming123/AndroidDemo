@@ -19,6 +19,7 @@ import com.weiyu.yui.menu.MenuActivity;
 import com.weiyu.yui.notification.NotificationActivity;
 import com.weiyu.yui.pager.PagerActivity;
 import com.weiyu.yui.recycler.RecyclerActivity;
+import com.weiyu.yui.setting.SettingActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Context context;
@@ -69,19 +70,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        new MenuInflater(context).inflate(R.menu.main_activity_menu,menu);
+        getMenuInflater().inflate(R.menu.main_activity_menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.main_activity_setting:
-                Toast.makeText(context,"点击了设置",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.main_activity_about:
-                Toast.makeText(context,"点击了关于",Toast.LENGTH_SHORT).show();
-                break;
+        if (item.getItemId() == R.id.main_activity_setting) {
+            startActivity(new Intent(context,SettingActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

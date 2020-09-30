@@ -11,6 +11,8 @@
                 android:id="@+id/brvah_header"/>
             <item android:id="@+id/brvah_refresh"
                 android:title="刷新与加载"/>
+            <item android:id="@+id/brvah_dragger"
+                android:title="拖拽与侧滑"/>
         </menu>
     </item>
 

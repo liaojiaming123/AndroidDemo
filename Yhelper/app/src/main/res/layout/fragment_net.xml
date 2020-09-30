@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".net.NetFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/linear_layout_net_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_connection_fragment"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="HttpURLConection" />
+        <Button
+            android:id="@+id/btn_okhttp_fragment"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="OKHttp" />
+        <Button
+            android:id="@+id/btn_volley_fragment"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="Volley" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -60,6 +60,9 @@ public class BrvahActivity extends AppCompatActivity {
             case R.id.brvah_refresh:
                 fragmentManager.beginTransaction().replace(R.id.frame_brvah,new BrvahRefreshFragment()).commit();
                 break;
+            case R.id.brvah_dragger:
+                fragmentManager.beginTransaction().replace(R.id.frame_brvah,new BrvahDraggerFragment()).commit();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
